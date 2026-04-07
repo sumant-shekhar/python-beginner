@@ -1,0 +1,7 @@
+print("hello-world! Start Point")
+print(123)
+print(23+2)
+print(20*2)
+print(20/2)
+print(23-3)
+print(20%3)
