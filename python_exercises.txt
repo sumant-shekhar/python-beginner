@@ -1,0 +1,532 @@
+========================================================
+  40 PYTHON BASIC EXERCISES FOR BEGINNERS
+  Source: https://pynative.com/python-basic-exercise-for-beginners/
+========================================================
+
+------------------------------------------------------------
+Exercise 1. Arithmetic Product and Conditional Logic
+------------------------------------------------------------
+Practice Problem: Write a Python function that accepts two integer numbers. If the product of the two numbers is less than or equal to 1000, return their product; otherwise, return their sum.
+
+Exercise Purpose: Learn basic control flow and the use of if-else statements. Understand how code decisions change output based on a mathematical threshold.
+
+Given Input:
+    Case 1: number1 = 20, number2 = 30
+    Case 2: number1 = 40, number2 = 30
+
+Expected Output:
+    The result is 600
+    The result is 70
+
+------------------------------------------------------------
+Exercise 2. Cumulative Sum of a Range
+------------------------------------------------------------
+Practice Problem: Iterate through the first 10 numbers (0–9). In each iteration, print the current number, the previous number, and their sum.
+
+Exercise Purpose: This exercise teaches "State Tracking." In programming, you often need to remember a value from a previous loop iteration to calculate results in the current one. This is the basis for algorithms like Fibonacci sequences or running totals.
+
+Given Input: Range: numbers = range(10)
+
+Expected Output:
+    Printing current and previous number sum in a range(10)
+    Current Number 0 Previous Number 0 Sum: 0
+    Current Number 1 Previous Number 0 Sum: 1
+    Current Number 2 Previous Number 1 Sum: 3
+    ....
+    Current Number 8 Previous Number 7 Sum: 15
+    Current Number 9 Previous Number 8 Sum: 17
+
+------------------------------------------------------------
+Exercise 3. String Indexing and Even Slicing
+------------------------------------------------------------
+Practice Problem: Display only those characters which are present at an even index number in a given string.
+
+Exercise Purpose: Understand how data is stored in memory using zero-based indexing. In most languages, the first character is at position 0, the second at 1, and so on. Mastering indexing is vital for data parsing.
+
+Given Input: String: "pynative"
+
+Expected Output:
+    Original String is pynative
+    Printing only even index chars
+    p
+    n
+    t
+    v
+
+------------------------------------------------------------
+Exercise 4. String Slicing and Substring Removal
+------------------------------------------------------------
+Practice Problem: Write a function to remove characters from a string starting from index 0 up to n and return a new string.
+
+Exercise Purpose: This exercise demonstrates how to truncate data strings, a common data-cleaning task.
+
+Given Input:
+    remove_chars("pynative", 4)
+    remove_chars("pynative", 2)
+
+Expected Output:
+    tive
+    native
+
+------------------------------------------------------------
+Exercise 5. Variable Swapping (The In-Place Method)
+------------------------------------------------------------
+Practice Problem: Write a program to swap the values of two variables, a and b, without using a third temporary variable.
+
+Exercise Purpose: This exercise will help you learn about memory efficiency and Python's special tuple unpacking feature. In other languages like C or Java, you need a temporary variable to swap values safely. In Python, you can swap values in one line without risking data loss.
+
+Given Input: a = 5, b = 10
+
+Expected Output:
+    Before Swap: a = 5, b = 10
+    After Swap: a = 10, b = 5
+
+------------------------------------------------------------
+Exercise 6. Calculating Factorial with a Loop
+------------------------------------------------------------
+Practice Problem: Write a program that calculates the factorial of a given number (e.g., 5!) using a for loop.
+
+Exercise Purpose: This exercise explores "Mathematical Accumulation." A factorial (e.g., 5! = 5*4*3*2*1) requires you to maintain a running product across multiple iterations, which is a core pattern in scientific computing.
+
+Given Input: number = 5
+
+Expected Output: The factorial of 5 is 120
+
+------------------------------------------------------------
+Exercise 7. List Manipulation: Add and Remove
+------------------------------------------------------------
+Practice Problem: Create a list of 5 fruits. Add a new fruit to the end of the list, then remove the second fruit (at index 1).
+
+Exercise Purpose: This exercise teaches "Dynamic Collection Management." Lists are rarely static; being able to modify, expand, and prune them is essential for handling data like shopping carts, user lists, or inventory systems.
+
+Given Input: fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+
+Expected Output: ['apple', 'cherry', 'date', 'elderberry', 'fig']
+
+------------------------------------------------------------
+Exercise 8. String Reversal
+------------------------------------------------------------
+Practice Problem: Write a program that takes a string and reverses it (e.g., "Python" becomes "nohtyP").
+
+Exercise Purpose: This exercise demonstrates "Sequence Slicing." Strings in Python are sequences, and mastering the slicing syntax is a powerful shortcut for data manipulation that would take 5-10 lines of code in other languages.
+
+Given Input: text = "Python"
+
+Expected Output: Reversed: nohtyP
+
+------------------------------------------------------------
+Exercise 9. Vowel Frequency Counter
+------------------------------------------------------------
+Practice Problem: Write a program to count the total number of vowels (a, e, i, o, u) present in a given sentence.
+
+Exercise Purpose: This exercise introduces "Membership Testing." By checking if a character belongs to a specific group (the vowels), you learn how to filter data based on categories. This is a fundamental step toward building text-analysis tools or spam filters.
+
+Given Input: sentence = "Learning Python is fun!"
+
+Expected Output: Number of vowels: 6
+
+------------------------------------------------------------
+Exercise 10. Finding Extremes (Min/Max) in a List
+------------------------------------------------------------
+Practice Problem: Given a list of integers, find and print both the largest and the smallest numbers.
+
+Exercise Purpose: This exercise explores "Aggregate Functions." While Python has built-in tools for this, understanding how to identify extremes is critical for data normalization, where you often need to find the range of a dataset before processing it.
+
+Given Input: nums = [45, 2, 89, 12, 7]
+
+Expected Output:
+    Largest: 89
+    Smallest: 2
+
+------------------------------------------------------------
+Exercise 11. Removing Duplicates from a List
+------------------------------------------------------------
+Practice Problem: Write a script that takes a list containing duplicate items and returns a new list with only unique elements.
+
+Exercise Purpose: This exercise teaches "Data De-duplication." In real-world data science, datasets are often "messy" with repeating entries. Mastering the conversion between Lists (which allow duplicates) and Sets (which do not) is the fastest way to clean data.
+
+Given Input: data = [1, 2, 2, 3, 4, 4, 4, 5]
+
+Expected Output: Unique List: [1, 2, 3, 4, 5]
+
+------------------------------------------------------------
+Exercise 12. List Comparison and Boolean Logic
+------------------------------------------------------------
+Practice Problem: Write a function to return True if the first and last number of a given list is the same. If the numbers are different, return False.
+
+Exercise Purpose: This exercise introduces "Collection Indexing" and "Boolean Flags." Comparing data structure boundaries is common in pattern matching and data integrity checks.
+
+Given Input:
+    numbers_x = [10, 20, 30, 40, 10]
+    numbers_y = [75, 65, 35, 75, 30]
+
+Expected Output:
+    Given list: [75, 65, 35, 75, 30] | result is False
+    Given list: [10, 20, 30, 40, 10] | result is True
+
+------------------------------------------------------------
+Exercise 13. Filtering Lists with Conditional Logic
+------------------------------------------------------------
+Practice Problem: Iterate through a given list of numbers and print only those numbers which are divisible by 5.
+
+Exercise Purpose: This exercise teaches the use of the modulo operator (%) and loop filtering. In data processing, you often need to sift through large datasets to extract subsets that meet mathematical criteria.
+
+Given Input: num_list = [10, 20, 33, 46, 55]
+
+Expected Output:
+    Divisible by 5:
+    10, 20, 55
+
+------------------------------------------------------------
+Exercise 14. Substring Frequency Analysis
+------------------------------------------------------------
+Practice Problem: Write a program to find how many times the substring "Emma" appears in a given string.
+
+Exercise Purpose: Text analysis and pattern matching are core pillars of programming. This exercise introduces searching for a "needle in a haystack," a fundamental concept for building search engines or data validation tools.
+
+Given Input: str_x = "Emma is good developer. Emma is a writer"
+
+Expected Output: Emma appeared 2 times
+
+------------------------------------------------------------
+Exercise 15. Nested Loops for Pattern Generation
+------------------------------------------------------------
+Practice Problem: Print the following pattern where each row contains a number repeated a specific number of times based on its value.
+
+    1
+    2 2
+    3 3 3
+    4 4 4 4
+    5 5 5 5 5
+
+Exercise Purpose: Pattern printing is a classic way to learn "Nested Loops." You coordinate an outer loop for rows and an inner loop for columns or repetitions. This improves spatial logic and control over output formatting.
+
+Given Input: Range: 1 to 5
+
+Expected Output: (The pattern shown above)
+
+------------------------------------------------------------
+Exercise 16. Numerical Palindrome Check
+------------------------------------------------------------
+Practice Problem: Write a program to check if a given number is a palindrome (reads the same forwards and backwards).
+
+Exercise Purpose: This exercise introduces the idea of "Reversing Logic." Reversing a string is simple, but reversing an integer takes some math, like using division and modulo, or changing its type. This shows how data types can work differently.
+
+Given Input:
+    Case 1: number = 121
+    Case 2: number = 125
+
+Expected Output:
+    Number 125 is not palindrome number
+    Number 121 is palindrome number
+
+------------------------------------------------------------
+Exercise 17. Merging Lists with Parity Filtering
+------------------------------------------------------------
+Practice Problem: Create a new list from two given lists such that the new list contains odd numbers from the first list and even numbers from the second list.
+
+Given Input:
+    list1 = [10, 20, 25, 30, 35]
+    list2 = [40, 45, 60, 75, 90]
+
+Expected Output: [25, 35, 40, 60, 90]
+
+------------------------------------------------------------
+Exercise 18. Integer Digit Extraction and Reversal
+------------------------------------------------------------
+Practice Problem: Write a program to extract each digit from an integer in the reverse order.
+
+Exercise Purpose: This exercise explores "Mathematical Parsing." Instead of converting a number to a string, use the modulo operator (%) and floor division (//) to isolate digits. This is common in low-level programming and algorithm challenges where type conversion is restricted.
+
+Given Input: number = 7536
+
+Expected Output: 6 3 5 7
+
+------------------------------------------------------------
+Exercise 19. Multi-Tiered Income Tax Calculation
+------------------------------------------------------------
+Practice Problem: Calculate income tax for a given income based on these rules:
+    - First $10,000: 0% tax
+    - Next $10,000: 10% tax
+    - Remaining income: 20% tax
+
+Exercise Purpose: This exercise introduces "Tax Brackets" logic, a classic example of complex conditional branching. It shows how to calculate values cumulatively instead of applying a single percentage to the entire amount.
+
+Given Input: income = 45000
+
+Expected Output: Total income tax to pay is 6000
+
+------------------------------------------------------------
+Exercise 20. Nested Loops for Multiplication Tables
+------------------------------------------------------------
+Practice Problem: Print a multiplication table from 1 to 10 in a formatted grid.
+
+Exercise Purpose: To master "Matrix Generation." This builds on the nested loop concepts from Exercise 15 and applies them to generate a structured data table. This is essential for understanding how to populate 2D arrays or generate spreadsheets.
+
+Given Input: Range: 1 to 10
+
+Expected Output:
+    1  2  3  4  5  6  7  8  9  10
+    2  4  6  8  10 12 14 16 18 20
+    ... (up to 10)
+
+------------------------------------------------------------
+Exercise 21. Downward Half-Pyramid Pattern
+------------------------------------------------------------
+Practice Problem: Print a downward half-pyramid pattern using stars (*).
+
+Exercise Purpose: Learn about reverse indexing. Controlling loop boundaries in reverse is important for algorithms that process data from end to beginning.
+
+Given Input: Rows: 5
+
+Expected Output:
+    * * * * *
+    * * * *
+    * * *
+    * *
+    *
+
+------------------------------------------------------------
+Exercise 22. Custom Exponentiation Function
+------------------------------------------------------------
+Practice Problem: Write a function called exponent(base, exp) that returns an integer value of the base raised to the power of the exponent.
+
+Exercise Purpose: Learn about "Accumulator Patterns." Although Python has a built-in power operator (**), making your own version shows how repeated multiplication works and how functions return results to the main program.
+
+Given Input: base = 2, exp = 5
+
+Expected Output: 2 raises to the power of 5: 32
+
+------------------------------------------------------------
+Exercise 23. Check Palindrome Number
+------------------------------------------------------------
+Practice Problem: Write a program to check if a given number is a palindrome. A palindrome number remains the same when its digits are reversed (e.g., 121, 545).
+
+Exercise Purpose: This exercise teaches "Algorithmic Reversal." While strings are easy to reverse in Python, reversing a number mathematically using the modulo (%) and floor division (//) operators deepens understanding of how integers are stored in memory and how to manipulate digits individually.
+
+Given Input: number = 121
+
+Expected Output:
+    Original number 121
+    Yes. given number is palindrome number
+
+------------------------------------------------------------
+Exercise 24. Generate Fibonacci Series
+------------------------------------------------------------
+Practice Problem: Write a program to print the first 15 terms of the Fibonacci series. The sequence starts with 0 and 1, and each subsequent number is the sum of the two preceding ones.
+
+Exercise Purpose: The Fibonacci sequence is a classic way to learn about state management in loops. You keep track of two changing variables at once to find the next number, which helps you see how data moves through each step.
+
+Given Input: Terms = 15
+
+Expected Output: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
+
+------------------------------------------------------------
+Exercise 25. Check Leap Year
+------------------------------------------------------------
+Practice Problem: Write a program that takes a year as input and determines if it is a leap year.
+
+A leap year is a year in the Gregorian calendar that contains an extra day, making it 366 days long instead of the usual 365. Rules for leap years: a year is a leap year if it's divisible by 4, unless it's also divisible by 100 but not by 400.
+
+Exercise Purpose: This exercise is vital for mastering "Complex Conditional Logic." A leap year isn't just "every 4 years"; there are specific exceptions for century years. This forces the programmer to use nested if statements or compound logical operators (and/or).
+
+Given Input: year = 2024
+
+Expected Output: 2024 is a leap year
+
+------------------------------------------------------------
+Exercise 26. Merging Two Dictionaries
+------------------------------------------------------------
+Practice Problem: Write a program that takes two separate dictionaries and merges them into one single dictionary.
+
+Exercise Purpose: This introduces "Key-Value Consolidation." Merging dictionaries is a common task when combining configuration files or user profiles. It also teaches you about "Key Overwriting" — what happens when both dictionaries share the same key.
+
+Given Input:
+    dict1 = {"name": "Alice", "age": 25}
+    dict2 = {"city": "New York", "job": "Engineer"}
+
+Expected Output: {'name': 'Alice', 'age': 25, 'city': 'New York', 'job': 'Engineer'}
+
+------------------------------------------------------------
+Exercise 27. Finding Common Elements (Intersections)
+------------------------------------------------------------
+Practice Problem: Take two lists and find the elements that appear in both. Use Sets to perform the operation.
+
+Exercise Purpose: This exercise explores "Mathematical Set Operations." Finding intersections is vital for recommendation engines (e.g., finding "mutual friends" or "shared interests"). It demonstrates why using the right data structure (Set) is more efficient than nested loops.
+
+Given Input:
+    list_a = [1, 2, 3, 4, 5]
+    list_b = [4, 5, 6, 7, 8]
+
+Expected Output: Common Elements: {4, 5}
+
+------------------------------------------------------------
+Exercise 28. Odd/Even List Splitter
+------------------------------------------------------------
+Practice Problem: Start with a list of 10 numbers. Iterate through them and sort them into two separate lists: one for even numbers and one for odd numbers.
+
+Given Input: numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]
+
+Expected Output:
+    Even numbers: [12, 34, 10, 8, 2]
+    Odd numbers: [7, 21, 5, 3, 19]
+
+------------------------------------------------------------
+Exercise 29. Word Length Analysis
+------------------------------------------------------------
+Practice Problem: Create a list of 5 words. Write a loop that iterates through the list and prints each word alongside its character count.
+
+Exercise Purpose: This exercise introduces "Metadata Extraction." Often, you aren't just interested in the data itself, but in its properties. In web development, this logic is used to validate if a user's password or username meets specific length requirements.
+
+Given Input: words = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+
+Expected Output:
+    Apple - 5
+    Banana - 6
+    Cherry - 6
+    Date - 4
+    Elderberry - 10
+
+------------------------------------------------------------
+Exercise 30. Word Frequency Counter (The Histogram)
+------------------------------------------------------------
+Practice Problem: Write a program that counts how many times each word appears in a given paragraph and stores these counts in a dictionary.
+
+Exercise Purpose: This is a classic "Natural Language Processing" (NLP) task. It teaches you how to map data to occurrences, which is the logic used by search engines to index web pages or by social media platforms to identify trending hashtags.
+
+Given Input: text = "apple banana apple cherry banana apple"
+
+Expected Output: {'apple': 3, 'banana': 2, 'cherry': 1}
+
+------------------------------------------------------------
+Exercise 31. Print Alternate Prime Numbers
+------------------------------------------------------------
+Practice Problem: Write a program to find all prime numbers up to 20, but only print every second (alternate) prime number found.
+
+Exercise Purpose: This exercise combines "Nested Loops" (to check for primality) with "Step Logic." It requires the programmer to first identify a subset of data and then apply a secondary filter, a common task in data reporting.
+
+Given Input: Limit = 20
+
+Expected Output: 2, 5, 11, 17
+
+------------------------------------------------------------
+Exercise 32. Dictionary of Squares (Mapping Logic)
+------------------------------------------------------------
+Practice Problem: Create a dictionary where the keys are numbers from 1 to 10 and the values are the squares of those numbers (e.g., 2: 4, 3: 9).
+
+Exercise Purpose: This exercise explores "Data Mapping." It demonstrates how dictionaries can be used to store pre-calculated mathematical relationships, essentially acting as a "lookup table" that can replace expensive repetitive calculations.
+
+Given Input: Range: 1 to 10
+
+Expected Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
+
+------------------------------------------------------------
+Exercise 33. Character Replacer (Data Sanitization)
+------------------------------------------------------------
+Practice Problem: Ask the user for a sentence. Replace every empty space in that sentence with an underscore (_) and print the final result.
+
+Exercise Purpose: This exercise focuses on "String Sanitization." In web development and file management, spaces are often problematic (especially in URLs or file paths). Learning to replace characters is a critical skill for preparing data for storage or transmission.
+
+Given Input: "I love coding in Python"
+
+Expected Output: I_love_coding_in_Python
+
+------------------------------------------------------------
+Exercise 34. Print Reverse Number Pattern
+------------------------------------------------------------
+Practice Problem: Print a downward number pattern where each row starts with a decreasing value.
+
+Exercise Purpose: In this exercise, you will learn about range control and practice using negative steps in loops to move backwards. This skill is important for algorithms that process data from the end of a file to the beginning.
+
+Given Input: Rows = 5
+
+Expected Output:
+    5 4 3 2 1
+    4 3 2 1
+    3 2 1
+    2 1
+    1
+
+------------------------------------------------------------
+Exercise 35. Digit Detection in Strings
+------------------------------------------------------------
+Practice Problem: Write a program to check if a user-entered string contains any numeric digits. Use a for loop to examine each character.
+
+Exercise Purpose: This exercise will help you learn about string traversal and character analysis. In software development, these skills are important for tasks like checking if a username has forbidden characters or if a password is complex enough.
+
+Given Input: input_string = "Python3"
+
+Expected Output: The string 'Python3' contains digits: True
+
+------------------------------------------------------------
+Exercise 36. Capitalize First Letter (Title Case)
+------------------------------------------------------------
+Practice Problem: Write a program to capitalize the first letter of each word in a given string without using the built-in .title() method.
+
+Exercise Purpose: In this exercise, you will learn about "Tokenization" and "String Re-assembly." You will split a sentence into words, change them, and then put the sentence back together. This helps you practice working with complex data structures.
+
+Given Input: text = "hello world from python"
+
+Expected Output: Hello World From Python
+
+------------------------------------------------------------
+Exercise 37. Simple Countdown Timer
+------------------------------------------------------------
+Practice Problem: Create a countdown timer that starts from a given number and counts down to zero using a while loop.
+
+Exercise Purpose: In this exercise, you will learn about loop termination logic and time delay management. Knowing how to control the flow of your code in real time is important for making animations, game loops, or automated scripts.
+
+Given Input: start_count = 5
+
+Expected Output:
+    5
+    4
+    3
+    2
+    1
+    Blast off!
+
+------------------------------------------------------------
+Exercise 38. File Creation and Basic I/O
+------------------------------------------------------------
+Practice Problem: Write a program that creates a new text file named notes.txt, writes three separate lines of text to it, and then reads that file back to display the contents in the console.
+
+Exercise Purpose: This exercise introduces "Persistent Storage." Unlike variables that disappear when the program stops, files allow you to save data to the hard drive. Learning the open(), write(), and read() workflow is essential for building logging systems and saving user settings.
+
+Given Input: Lines to write:
+    1. "Hello, this is my first note."
+    2. "Python file handling is simple."
+    3. "End of file."
+
+Expected Output:
+    notes.txt
+
+    Hello, this is my first note.
+    Python file handling is simple.
+    End of file.
+
+------------------------------------------------------------
+Exercise 39. External File Word Counter
+------------------------------------------------------------
+Practice Problem: Write a script that opens an existing .txt file and counts the total number of words it contains.
+
+Exercise Purpose: This exercise teaches "Data Parsing." In professional environments, you rarely work with data you typed into the code yourself; you almost always pull data from external sources. This script simulates basic text-mining techniques used to analyze documents or logs.
+
+Given Input: An external file sample.txt containing: "Coding is the language of the future."
+
+Expected Output: The file contains 7 words.
+
+------------------------------------------------------------
+Exercise 40. Introduction to Classes (OOP)
+------------------------------------------------------------
+Practice Problem: Create a Car class with attributes for make, model, and year. Include a method called start_engine() that prints a formatted string describing the car starting up.
+
+Exercise Purpose: This exercise introduces Object-Oriented Programming (OOP). Instead of just writing functions, you are creating a "Blueprint" (the Class) to generate "Objects" (the specific cars). This is how modern software is built, allowing you to organize code into logical, reusable components.
+
+Given Input: Make: "Toyota", Model: "Camry", Year: 2022
+
+Expected Output: The 2022 Toyota Camry's engine is now running!
+
+========================================================
+  END OF FILE — 40 Exercises Total
+========================================================
