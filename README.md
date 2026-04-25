@@ -1,37 +1,30 @@
-# python-beginner
-Documenting my Python learning journey following Shradha Khapra's full course. Contains my daily code, practice problems, and lecture notes as I build rock-solid Python fundamentals!
-# 🐍 Python Full Course (2026) | Master Tracker
+# Python Foundations 🐍
 
-Welcome to my central repository for learning Python! 
+This repo is where I'm documenting my deep dive into Python. I'm a BCA student and developer, and while I usually work on bigger things like my **EPIC_OCR** pipeline, I realized I needed to step back and make sure my fundamentals are actually solid. No shortcuts, just pure logic and practice.
 
-I created this space to keep my code, notes, and practice problems highly organized as I work my way through the **[Python Language Full Course (2026) by Shradha Khapra](https://www.youtube.com/playlist?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0)**. 
+## 🚀 The Mission
+I'm rebuilding my Python knowledge from the ground up. My goal is simple: write cleaner, faster, and more efficient code for my heavy-lifting projects later on. Better fundamentals = less debugging later.
 
-## 🎯 Why This Repo?
+## 📂 What's Inside?
+I've organized everything by lectures and specific problem sets:
 
-As a BCA student and developer, I spend a lot of time writing code for practical applications—like building out the Python logic for my **EPIC_OCR** data extraction pipeline. I'm using this course to step back and make sure my absolute foundational knowledge of Python is completely rock-solid. Better fundamentals mean writing cleaner, faster, and more efficient code for the heavy-lifting projects later on. 
+*   **L1 to L8 Folders**: Daily code, logic tests, and experiments from my study sessions.
+*   **Notes**: My personal PDFs and cheat sheets for each topic.
+*   **Basic Questions**: A dedicated space for the 40-exercise challenge.
 
-## 🗂️ Playlist Log
+## 📝 The 40-Exercise Challenge
+I've included a set of 40 basic-to-intermediate exercises (found in `python_exercises.txt`) to test my pattern-reading skills and logical thinking.
 
-Here is my master checklist for the playlist. I check these off and push the corresponding code into their respective folders as I finish each video:
+### Tracking My Progress:
+- [x] **01-10**: Arithmetic, Factorials, and List Basics
+- [x] **11-20**: Palindromes, Nested Loops, and Tax Logic
+- [x] **21-30**: Pattern Printing, Fibonacci, and Dictionary Mapping
+- [ ] **31-40**: Advanced String Sanitization, File I/O, and OOP Basics (Working on these!)
 
-- [x] **Lecture 1:** Variables, Data Types, and I/O Basics
-- [ ] **Lecture 2:** Strings & Conditional Statements
-- [ ] **Lecture 3:** Lists & Tuples
-- [ ] **Lecture 4:** Dictionary & Set
-- [ ] **Lecture 5:** Loops (While & For)
-- [ ] **Lecture 6:** Functions & Recursion
-- [ ] **Lecture 7:** File I/O
-- [ ] **Lecture 8:** Object-Oriented Programming (OOPs)
-- [ ] **Lecture 9:** Advanced Topics / Mini Projects
-
-*(Note: The folders in this repository directly correspond to the lecture sequence above. Each folder contains the daily `.py` files and my personal notes.)*
-
-## 💻 My Dev Environment
-
-If you want to run any of my code, here is what I am building and testing it on:
-* **OS:** Arch Linux 
-* **Language:** Python 3.x
-* **Editor:** VS Code / Terminal
+## 💻 My Setup
+*   **OS**: Arch Linux (BTW)
+*   **Language**: Python 3.x
+*   **Tools**: VS Code & Terminal
 
 ---
 *Always learning, always building. ✌️*
