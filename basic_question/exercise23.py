@@ -1,13 +1,9 @@
-num = int(input("Enter Number: "))
-original = num
-reverse = 0
+def palinedrome(num):
+    str_num = str(num)
+    rev = str_num[::-1]
+    print(num == rev)
+    return
 
-while num > 0:
-    d = num % 10
-    reverse = reverse * 10 + d
-    num = num // 10
 
-if original == reverse:
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+x = int(input("x = "))
+palinedrome(x)
